@@ -1,8 +1,10 @@
 package controllersClasses;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.fxml.LoadException;
 import javafx.scene.Node;
 import javafx.scene.control.RadioButton;
 import javafx.scene.layout.Pane;
@@ -20,21 +22,26 @@ public class ControllerServerMainPanel implements Initializable {
     private RadioButton settingsRadioButton;
     @FXML
     private Pane mainPane;
+    @FXML
+    void onActionHomeRadioButton(ActionEvent event) {
+        try{
+            Pane newLoadedPane = FXMLLoader.load(getClass().getResource("../fxml/serverFileExpoler.fxml"));
+            mainPane.getChildren().add(newLoadedPane);
+        }catch(NullPointerException x){
+            x.printStackTrace();
+        }catch(IOException x){
+            x.printStackTrace();
+        }
+    }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-
-
-        /**
-         * to make toggle buttons more like menu
-         * switching from radio-button graphic
-         * to toggle button graphic with radio-button action;)
-         * */
-        /*homeRadioButton.getStyleClass().remove("radio-button");
-        homeRadioButton.getStyleClass().add("toggle-button");
-        usersRadioButton.getStyleClass().remove("radio-button");
-        usersRadioButton.getStyleClass().add("toggle-button");
-        settingsRadioButton.getStyleClass().remove("radio-button");
-        settingsRadioButton.getStyleClass().add("toggle-button");*/
+        try{
+            Pane newLoadedPane = FXMLLoader.load(getClass().getResource("../fxml/serverFileExpoler.fxml"));
+            mainPane.getChildren().add(newLoadedPane);
+        }catch(NullPointerException x){
+            x.printStackTrace();
+        }catch(IOException x){
+            x.printStackTrace();
+        }
     }
 }

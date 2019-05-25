@@ -9,5 +9,14 @@
     <artifactId>server</artifactId>
     <version>1.0</version>
 
+    <dependencies>
+    <dependency>
+        <groupId>de.jensd</groupId>
+        <artifactId>fontawesomefx</artifactId>
+        <version>8.9</version>
+    </dependency>
+
+    </dependencies>
+
 
 </project>

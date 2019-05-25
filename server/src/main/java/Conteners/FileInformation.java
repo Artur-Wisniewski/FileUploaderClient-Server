@@ -5,10 +5,14 @@ import javafx.scene.image.ImageView;
 
 public class FileInformation {
     /**
-     * @param image contain value of file image
-     * @param name  contain SimpleStringProperty ( string with some extras ) name of file in this case
-     * @param size  contain size of file
-     * @param date  contain date of last modification
+     * @param image
+     * contain value of file image
+     * @param name
+     * contain SimpleStringProperty ( string with some extras ) name of file in this case
+     * @param size
+     * contain size of file
+     * @param date
+     * contain date of last modification
      * */
     private ImageView image;
     private SimpleStringProperty name;

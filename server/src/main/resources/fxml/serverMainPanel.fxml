@@ -16,7 +16,7 @@
             <children>
                 <Pane prefHeight="100.0" prefWidth="250.0">
                     <children>
-                        <Label layoutX="61.0" layoutY="33.0" text="File.up" textFill="WHITE">
+                        <Label layoutX="61.0" layoutY="33.0" text="FileClasses.up" textFill="WHITE">
                             <graphic>
                                 <FontAwesomeIconView fill="WHITE" glyphName="CONNECTDEVELOP" size="40.0" />
                             </graphic>
@@ -26,7 +26,7 @@
                         </Label>
                     </children>
                 </Pane>
-                <RadioButton fx:id="homeRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="250.0" selected="true" stylesheets="@../css/button.css" text="Home" textFill="WHITE">
+                <RadioButton fx:id="homeRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onActionHomeRadioButton" prefHeight="65.0" prefWidth="250.0" selected="true" stylesheets="@../css/button.css" text="Home" textFill="WHITE">
                     <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="18.0" />
                     </graphic>
@@ -64,6 +64,6 @@
                 </RadioButton>
             </children>
         </VBox>
-        <Pane fx:id="mainPane" layoutX="250.0" layoutY="100.0" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" />
+        <Pane fx:id="mainPane" layoutX="250.0" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" />
     </children>
 </AnchorPane>
