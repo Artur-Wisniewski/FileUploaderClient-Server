@@ -53,6 +53,7 @@ public class FileExplorerTableView {
         this.createTableView();
 
     }
+
     public void fileSetUp(TableView<FileInformation> tableview,TableColumn<FileInformation, ImageView> image,
                           TableColumn<FileInformation, String>    date,TableColumn<FileInformation, String>    name,TableColumn<FileInformation, String>    size){
         this.tableview = tableview;
@@ -60,6 +61,10 @@ public class FileExplorerTableView {
         this.image = image;
         this.name = name;
         this.size = size;
+    }
+    public void refreshTableView(){
+        tableview.getItems().clear();
+        createTableView();
     }
     private void createTableView(){
         /**
@@ -161,7 +166,9 @@ public class FileExplorerTableView {
          * */
         return new SimpleDateFormat("dd.MM.yy HH:mm").format(f.lastModified());
     }
-
+    public void setDirectoryFile(File file){
+        this.DirectoryFile = file;
+    }
     public static String getPath() {
         return DirectoryFile.getAbsolutePath();
     }

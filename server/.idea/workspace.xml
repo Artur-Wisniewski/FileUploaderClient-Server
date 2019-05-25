@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="25890c9b-e7fa-43a6-b47f-4394a99712ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/table.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/serverFileExpoler.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/serverFileExpoler.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,13 +46,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="164" column="32" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="32" />
+            <state relative-caret-position="259">
+              <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#tableview#0;class#FileExplorer#0" />
                 <element signature="e#2328#2654#0" />
-                <element signature="e#5668#5669#0" expanded="true" />
+                <element signature="e#5626#5627#0" expanded="true" />
+                <element signature="e#5667#5668#0" expanded="true" />
+                <element signature="e#5861#5862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="453">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="124" selection-start-line="10" selection-start-column="124" selection-end-line="10" selection-end-column="124" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -102,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="38" column="30" selection-start-line="38" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="513">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -111,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/css/table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="442">
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -131,8 +136,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>DirectoryToString</find>
-      <find>label</find>
       <find>FileClasses</find>
+      <find>label</find>
+      <find>res</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,11 +154,12 @@
         <option value="$PROJECT_DIR$/src/main/java/File/FileExplorer.java" />
         <option value="$PROJECT_DIR$/src/main/java/FileClassese/FileExplorer.java" />
         <option value="$PROJECT_DIR$/src/main/java/FileClasses/FileExplorer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/serverMainPanel.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/css/table.css" />
+        <option value="$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java" />
       </list>
     </option>
   </component>
@@ -305,11 +312,19 @@
       <option name="project" value="LOCAL" />
       <updated>1558815372361</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Table View without horizontal scrollbar">
+      <created>1558817729806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558817729806</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -342,7 +357,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="File Explorer" />
     <MESSAGE value="Table View css added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Table View css added" />
+    <MESSAGE value="Table View without horizontal scrollbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Table View without horizontal scrollbar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -404,14 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/serverMainPanel.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="18" column="71" lean-forward="true" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -422,10 +430,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/serverMainPanel.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="18" column="71" lean-forward="true" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="124" selection-start-line="10" selection-start-column="124" selection-end-line="10" selection-end-column="124" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="38" column="30" selection-start-line="38" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="513">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -436,25 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/serverFileExpoler.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllersClasses/ControllerServerFileExplorer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="453">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -463,13 +479,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileClasses/FileExplorerTableView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="164" column="32" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="32" />
+        <state relative-caret-position="259">
+          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#tableview#0;class#FileExplorer#0" />
             <element signature="e#2328#2654#0" />
-            <element signature="e#5668#5669#0" expanded="true" />
+            <element signature="e#5626#5627#0" expanded="true" />
+            <element signature="e#5667#5668#0" expanded="true" />
+            <element signature="e#5861#5862#0" expanded="true" />
           </folding>
         </state>
       </provider>
