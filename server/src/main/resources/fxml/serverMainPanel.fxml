@@ -16,7 +16,7 @@
             <children>
                 <Pane prefHeight="100.0" prefWidth="250.0">
                     <children>
-                        <Label layoutX="61.0" layoutY="33.0" text="FileClasses.up" textFill="WHITE">
+                        <Label layoutX="61.0" layoutY="33.0" text="File.up" textFill="WHITE">
                             <graphic>
                                 <FontAwesomeIconView fill="WHITE" glyphName="CONNECTDEVELOP" size="40.0" />
                             </graphic>

@@ -4,6 +4,7 @@ import Conteners.FileInformation;
 import FileClasses.FileExplorerTableView;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
@@ -33,11 +34,13 @@ public class ControllerServerFileExplorer implements Initializable {
 
     private  FileExplorerTableView fileExplorer;
 
+    @FXML
+    private Label currentDirectory;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         fileExplorer = new FileExplorerTableView(tableViewMain,columnIcon,columnDateModified,columnName,columnSize);
-
+        currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
     }
 }

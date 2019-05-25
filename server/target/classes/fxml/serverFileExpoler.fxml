@@ -8,7 +8,7 @@
 
 <Pane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersClasses.ControllerServerFileExplorer">
    <children>
-      <TableView fx:id="tableViewMain" layoutY="100.0" prefHeight="500.0" prefWidth="550.0" stylesheets="@../css/button.css">
+      <TableView fx:id="tableViewMain" layoutY="100.0" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/table.css">
         <columns>
           <TableColumn fx:id="columnIcon" editable="false" minWidth="0.0" prefWidth="24.0" resizable="false" />
           <TableColumn fx:id="columnName" editable="false" prefWidth="310.0" resizable="false" text="Name" />
@@ -16,9 +16,9 @@
             <TableColumn fx:id="columnDateModified" editable="false" minWidth="0.0" prefWidth="123.0" resizable="false" text="Date Modified" />
         </columns>
       </TableView>
-      <Label layoutX="39.0" layoutY="30.0" prefHeight="37.0" prefWidth="173.0" text="Server Files">
+      <Label fx:id="currentDirectory" layoutX="14.0" layoutY="31.0" prefHeight="37.0" prefWidth="475.0">
          <font>
-            <Font size="20.0" />
+            <Font size="14.0" />
          </font>
       </Label>
    </children>
