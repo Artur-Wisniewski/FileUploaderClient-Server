@@ -5,6 +5,7 @@ import FileClasses.FileExplorerTableView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -42,6 +43,15 @@ public class ControllerServerFileExplorer implements Initializable {
     @FXML
     private Label currentDirectory;
 
+    @FXML
+    private MenuItem OpenMenuItem;
+
+    @FXML
+    private MenuItem ShareMenuItem;
+
+    @FXML
+    private ContextMenu contextMenu;
+
     private  FileExplorerTableView fileExplorer;
 
     private Desktop desktop;
@@ -52,12 +62,18 @@ public class ControllerServerFileExplorer implements Initializable {
         currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
     }
     @FXML
+    void OpenFile(ActionEvent event) {
+        checkContent();
+    }
+
+    @FXML
+    void ShareFile(ActionEvent event) {
+        //TO DO
+    }
+    @FXML
     void onMouseDoubleClickedTableView(MouseEvent event) {
         if(event.getClickCount() == 2) {
-            File file = new File(fileExplorer.getPath() + "\\" + tableViewMain.getSelectionModel().getSelectedItem().getName());
-            if(!enterIfDirectory(file)){
-                openIfFile(file);
-            }
+            checkContent();
         }
     }
     @FXML
@@ -66,7 +82,17 @@ public class ControllerServerFileExplorer implements Initializable {
     }
     @FXML
     void dropRightClickMenu(ContextMenuEvent event) {
+        System.out.println("kek");
 
+    }
+
+
+
+    void checkContent(){
+        File file = new File(fileExplorer.getPath() + "\\" + tableViewMain.getSelectionModel().getSelectedItem().getName());
+        if(!enterIfDirectory(file)){
+            openIfFile(file);
+        }
     }
     private boolean enterIfDirectory(File file){
         if(file.isDirectory()){

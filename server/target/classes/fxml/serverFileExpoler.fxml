@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
@@ -8,18 +12,31 @@
 
 <Pane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersClasses.ControllerServerFileExplorer">
    <children>
-      <TableView fx:id="tableViewMain" layoutY="100.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseDoubleClickedTableView" prefHeight="500.0" prefWidth="550.0" stylesheets="@../css/table.css">
+      <TableView fx:id="tableViewMain" layoutY="100.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onContextMenuRequested="#dropRightClickMenu" onMouseClicked="#onMouseDoubleClickedTableView" prefHeight="500.0" prefWidth="550.0" stylesheets="@../css/table.css">
         <columns>
           <TableColumn fx:id="columnIcon" editable="false" maxWidth="25.0" minWidth="0.0" prefWidth="25.0" resizable="false" />
           <TableColumn fx:id="columnName" editable="false" maxWidth="325.0" prefWidth="325.0" resizable="false" text="Name" />
             <TableColumn fx:id="columnSize" editable="false" maxWidth="80.0" minWidth="0.0" resizable="false" text="Size" />
             <TableColumn fx:id="columnDateModified" editable="false" maxWidth="100.0" minWidth="0.0" prefWidth="115.0" resizable="false" text="Date Modified" />
         </columns>
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu">
+              <items>
+                <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#OpenFile" text="Open" />
+                  <MenuItem fx:id="shareMenuItem" mnemonicParsing="false" onAction="#ShareFile" text="Share" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
       </TableView>
-      <Label fx:id="currentDirectory" layoutX="14.0" layoutY="31.0" prefHeight="37.0" prefWidth="475.0">
+      <Label fx:id="currentDirectory" layoutX="61.0" layoutY="32.0" prefHeight="30.0" prefWidth="475.0" text="Current Directory:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
+      <Button layoutX="17.0" layoutY="33.0" mnemonicParsing="false" onAction="#goUpOnAction" prefHeight="32.0" prefWidth="32.0" stylesheets="@../css/button.css">
+         <graphic>
+            <FontAwesomeIconView cache="true" cacheHint="SCALE_AND_ROTATE" fill="WHITE" glyphName="ARROW_UP" size="20" text="" wrappingWidth="18.0" />
+         </graphic>
+      </Button>
    </children>
 </Pane>

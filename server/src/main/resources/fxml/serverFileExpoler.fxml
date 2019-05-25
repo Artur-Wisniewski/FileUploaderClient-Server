@@ -2,7 +2,9 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
@@ -17,6 +19,14 @@
             <TableColumn fx:id="columnSize" editable="false" maxWidth="80.0" minWidth="0.0" resizable="false" text="Size" />
             <TableColumn fx:id="columnDateModified" editable="false" maxWidth="100.0" minWidth="0.0" prefWidth="115.0" resizable="false" text="Date Modified" />
         </columns>
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu">
+              <items>
+                <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#OpenFile" text="Open" />
+                  <MenuItem fx:id="shareMenuItem" mnemonicParsing="false" onAction="#ShareFile" text="Share" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
       </TableView>
       <Label fx:id="currentDirectory" layoutX="61.0" layoutY="32.0" prefHeight="30.0" prefWidth="475.0" text="Current Directory:">
          <font>
