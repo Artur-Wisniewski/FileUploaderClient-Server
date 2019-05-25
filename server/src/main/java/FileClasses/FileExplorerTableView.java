@@ -39,7 +39,7 @@ public class FileExplorerTableView {
      * store name of the file
      * @param size
      * store size of the file
-    */
+     */
 
     TableView<FileInformation>              tableview;
     TableColumn<FileInformation, ImageView> image;
@@ -48,14 +48,15 @@ public class FileExplorerTableView {
     TableColumn<FileInformation, String>    size;
 
     public FileExplorerTableView(TableView<FileInformation> tableview, TableColumn<FileInformation, ImageView> image,
-                                 TableColumn<FileInformation, String> date, TableColumn<FileInformation, String> name, TableColumn<FileInformation, String> size){
-        this.fileSetUp(tableview,image,date,name,size);
+                                 TableColumn<FileInformation, String> date, TableColumn<FileInformation, String> name, TableColumn<FileInformation, String> size,String DirectoryFileName){
+        this.fileSetUp(tableview,image,date,name,size,DirectoryFileName);
         this.createTableView();
 
     }
 
     public void fileSetUp(TableView<FileInformation> tableview,TableColumn<FileInformation, ImageView> image,
-                          TableColumn<FileInformation, String>    date,TableColumn<FileInformation, String>    name,TableColumn<FileInformation, String>    size){
+                          TableColumn<FileInformation, String>    date,TableColumn<FileInformation, String>    name,TableColumn<FileInformation, String>    size,String DirectoryFileName){
+        setDirectoryFileByName(DirectoryFileName);
         this.tableview = tableview;
         this.date = date;
         this.image = image;
@@ -78,9 +79,7 @@ public class FileExplorerTableView {
          * store record informations
          *
          * */
-        if(DirectoryFile==null){
-            DirectoryFile = new File("./"); // temporary solution
-        }
+
 
         File [] files = DirectoryFile.listFiles();
         FileInformation [] fileInformationArray = new FileInformation[files.length];
@@ -104,9 +103,9 @@ public class FileExplorerTableView {
          * Called by {@link #createTableView()} method
          * */
         return new FileInformation(new ImageView(getFileIcon(file))
-                                  ,file.getName()
-                                  ,getFileSize(file)
-                                  ,getLastModified(file));
+                ,file.getName()
+                ,getFileSize(file)
+                ,getLastModified(file));
     }
     private Image getFileIcon(File f){
 
@@ -121,7 +120,7 @@ public class FileExplorerTableView {
 
         return toFXImage((BufferedImage) ((ImageIcon) FileSystemView.getFileSystemView().getSystemIcon(f)).getImage(),null);
     }
-//    private void setLabel(){
+    //    private void setLabel(){
 //        /**
 //         * Called to set label text label will contain current directory
 //         * */
@@ -169,7 +168,13 @@ public class FileExplorerTableView {
     public void setDirectoryFile(File file){
         this.DirectoryFile = file;
     }
-    public static String getPath() {
+    public void setDirectoryFileByName(String name){
+        this.DirectoryFile = new File(name);
+    }
+    public  String getPath() {
         return DirectoryFile.getAbsolutePath();
+    }
+    public  File getDirectoryFile() {
+        return DirectoryFile;
     }
 }

@@ -2,12 +2,14 @@ package controllersClasses;
 
 import Conteners.FileInformation;
 import FileClasses.FileExplorerTableView;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
@@ -45,23 +47,30 @@ public class ControllerServerFileExplorer implements Initializable {
     private Desktop desktop;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        fileExplorer = new FileExplorerTableView(tableViewMain,columnIcon,columnDateModified,columnName,columnSize);
+
+        fileExplorer = new FileExplorerTableView(tableViewMain,columnIcon,columnDateModified,columnName,columnSize,"C:\\Users\\Artur\\Downloads\\MN - gral\\Wejsciówka 3\\Koło");
         currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
     }
     @FXML
     void onMouseDoubleClickedTableView(MouseEvent event) {
         if(event.getClickCount() == 2) {
             File file = new File(fileExplorer.getPath() + "\\" + tableViewMain.getSelectionModel().getSelectedItem().getName());
-            if(!getIfDirectory(file)){
+            if(!enterIfDirectory(file)){
                 openIfFile(file);
             }
         }
     }
-    private boolean getIfDirectory(File file){
+    @FXML
+    void goUpOnAction(ActionEvent event) {
+        changeDirectory(fileExplorer.getDirectoryFile().getParentFile());
+    }
+    @FXML
+    void dropRightClickMenu(ContextMenuEvent event) {
+
+    }
+    private boolean enterIfDirectory(File file){
         if(file.isDirectory()){
-            fileExplorer.setDirectoryFile(file);
-            fileExplorer.refreshTableView();
-            currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
+            changeDirectory(file);
             return true;
         }
         return false;
@@ -79,4 +88,10 @@ public class ControllerServerFileExplorer implements Initializable {
         }
         return false;
     }
+    private void changeDirectory(File file){
+        fileExplorer.setDirectoryFile(file);
+        fileExplorer.refreshTableView();
+        currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
+    }
+
 }
