@@ -20,10 +20,10 @@
             <TableColumn fx:id="columnDateModified" editable="false" maxWidth="100.0" minWidth="0.0" prefWidth="115.0" resizable="false" text="Date Modified" />
         </columns>
          <contextMenu>
-            <ContextMenu fx:id="contextMenu">
+            <ContextMenu>
               <items>
-                <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#OpenFile" text="Open" />
-                  <MenuItem fx:id="shareMenuItem" mnemonicParsing="false" onAction="#ShareFile" text="Share" />
+                <MenuItem mnemonicParsing="false" onAction="#OpenFile" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#ShareFile" text="Share" />
               </items>
             </ContextMenu>
          </contextMenu>

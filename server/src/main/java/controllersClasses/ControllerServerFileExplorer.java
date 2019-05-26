@@ -43,15 +43,6 @@ public class ControllerServerFileExplorer implements Initializable {
     @FXML
     private Label currentDirectory;
 
-    @FXML
-    private MenuItem OpenMenuItem;
-
-    @FXML
-    private MenuItem ShareMenuItem;
-
-    @FXML
-    private ContextMenu contextMenu;
-
     private  FileExplorerTableView fileExplorer;
 
     private Desktop desktop;
@@ -81,10 +72,7 @@ public class ControllerServerFileExplorer implements Initializable {
         changeDirectory(fileExplorer.getDirectoryFile().getParentFile());
     }
     @FXML
-    void dropRightClickMenu(ContextMenuEvent event) {
-        System.out.println("kek");
-
-    }
+    void dropRightClickMenu(ContextMenuEvent event) {}
 
 
 
@@ -109,7 +97,6 @@ public class ControllerServerFileExplorer implements Initializable {
             } catch(IOException x){
                 System.out.println(x.getMessage());
             }
-
             return true;
         }
         return false;

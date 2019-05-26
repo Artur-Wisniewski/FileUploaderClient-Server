@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class main extends Application {
     @Override
@@ -17,6 +18,8 @@ public class main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("fxml/serverMainPanel.fxml"));
         primaryStage.setTitle("FileUpServer");
         primaryStage.setScene(new Scene(root));
+        //primaryStage.setResizable(false);
+        primaryStage.initStyle(StageStyle.UNIFIED);
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon/icon.png")));
         primaryStage.show();//sample/resources/icon.png
         }catch (Exception e){

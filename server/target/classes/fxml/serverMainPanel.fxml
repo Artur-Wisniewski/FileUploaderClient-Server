@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersClasses.ControllerServerMainPanel">
     <children>
-        <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #047ff8;">
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #047ff8;">
             <children>
                 <Pane prefHeight="100.0" prefWidth="250.0">
                     <children>
@@ -43,17 +43,6 @@
                 <RadioButton fx:id="usersRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="250.0" stylesheets="@../css/button.css" text="Users" textFill="WHITE" toggleGroup="$Menu">
                     <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="18.0" />
-                    </graphic>
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                    <padding>
-                        <Insets left="50.0" />
-                    </padding>
-                </RadioButton>
-                <RadioButton fx:id="settingsRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="250.0" stylesheets="@../css/button.css" text="Settings" textFill="WHITE" toggleGroup="$Menu">
-                    <graphic>
-                        <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="18.0" text="" />
                     </graphic>
                     <font>
                         <Font size="18.0" />
