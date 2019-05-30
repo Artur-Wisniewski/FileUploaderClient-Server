@@ -40,7 +40,7 @@
                         <ToggleGroup fx:id="Menu" />
                     </toggleGroup>
                 </RadioButton>
-                <RadioButton fx:id="usersRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="250.0" stylesheets="@../css/button.css" text="Users" textFill="WHITE" toggleGroup="$Menu">
+                <RadioButton fx:id="usersRadioButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#usersRadioButtonOnAction" prefHeight="65.0" prefWidth="250.0" stylesheets="@../css/button.css" text="Users" textFill="WHITE" toggleGroup="$Menu">
                     <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="18.0" />
                     </graphic>
@@ -51,6 +51,17 @@
                         <Insets left="50.0" />
                     </padding>
                 </RadioButton>
+            <RadioButton alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#logRadioButtonOnAction" prefHeight="65.0" prefWidth="250.0" stylesheets="@../css/button.css" text="Logs" textFill="WHITE" toggleGroup="$Menu">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="STEAM" size="20" />
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </RadioButton>
             </children>
         </VBox>
         <Pane fx:id="mainPane" layoutX="250.0" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" />

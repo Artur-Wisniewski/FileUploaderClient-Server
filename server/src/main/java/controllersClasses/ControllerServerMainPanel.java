@@ -14,18 +14,35 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ControllerServerMainPanel implements Initializable {
-    @FXML
-    private RadioButton homeRadioButton;
-    @FXML
-    private RadioButton usersRadioButton;
-    @FXML
-    private RadioButton settingsRadioButton;
+
     @FXML
     private Pane mainPane;
     @FXML
     void onActionHomeRadioButton(ActionEvent event) {
         try{
             Pane newLoadedPane = FXMLLoader.load(getClass().getResource("../fxml/serverFileExpoler.fxml"));
+            mainPane.getChildren().add(newLoadedPane);
+        }catch(NullPointerException x){
+            x.printStackTrace();
+        }catch(IOException x){
+            x.printStackTrace();
+        }
+    }
+    @FXML
+    void usersRadioButtonOnAction(ActionEvent event) {
+        try{
+            Pane newLoadedPane = FXMLLoader.load(getClass().getResource("../fxml/serverUsersExplorer.fxml"));
+            mainPane.getChildren().add(newLoadedPane);
+        }catch(NullPointerException x){
+            x.printStackTrace();
+        }catch(IOException x){
+            x.printStackTrace();
+        }
+    }
+    @FXML
+    void logRadioButtonOnAction(ActionEvent event) {
+        try{
+            Pane newLoadedPane = FXMLLoader.load(getClass().getResource("../fxml/serverLog.fxml"));
             mainPane.getChildren().add(newLoadedPane);
         }catch(NullPointerException x){
             x.printStackTrace();
@@ -44,4 +61,5 @@ public class ControllerServerMainPanel implements Initializable {
             x.printStackTrace();
         }
     }
+
 }

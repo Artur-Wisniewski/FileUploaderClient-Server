@@ -28,15 +28,17 @@
             </ContextMenu>
          </contextMenu>
       </TableView>
-      <Label fx:id="currentDirectory" layoutX="61.0" layoutY="32.0" prefHeight="30.0" prefWidth="475.0" text="Current Directory:">
+      <Label fx:id="currentDirectory" layoutX="20.0" layoutY="30.0" prefHeight="40.0" prefWidth="475.0" text="Current Directory:">
          <font>
             <Font size="14.0" />
          </font>
-      </Label>
-      <Button layoutX="17.0" layoutY="33.0" mnemonicParsing="false" onAction="#goUpOnAction" prefHeight="32.0" prefWidth="32.0" stylesheets="@../css/button.css">
          <graphic>
-            <FontAwesomeIconView cache="true" cacheHint="SCALE_AND_ROTATE" fill="WHITE" glyphName="ARROW_UP" size="20" text="" wrappingWidth="18.0" />
+            <Button mnemonicParsing="false" onAction="#goUpOnAction" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/button.css">
+               <graphic>
+                  <FontAwesomeIconView cache="true" cacheHint="SCALE_AND_ROTATE" fill="WHITE" glyphName="ARROW_UP" size="20" text="" wrappingWidth="18.0" />
+               </graphic>
+            </Button>
          </graphic>
-      </Button>
+      </Label>
    </children>
 </Pane>
