@@ -14,7 +14,7 @@ public class ControllerServerLog implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        textflow.getChildren().add(new Text("Server is up\n"));
-        textflow.getChildren().add(new Text("Something very long koteczku moj kochany jesli to czytasz pamietaj zawsze Cie kochalem nie wazne co by sie nie stalo zawsze i to zawsze bede Cie kochał\n Tutaj powinny byc jakies cenne informacje"));
+        textflow.getChildren().add(new Text("Server running\n"));
+        textflow.getChildren().add(new Text("Loading JPA"));
     }
 }
