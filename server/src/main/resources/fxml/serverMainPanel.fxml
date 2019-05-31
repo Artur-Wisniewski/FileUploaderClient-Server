@@ -14,7 +14,7 @@
     <children>
         <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #047ff8;">
             <children>
-                <Pane prefHeight="100.0" prefWidth="250.0">
+                <Pane prefHeight="100.0">
                     <children>
                         <Label layoutX="61.0" layoutY="33.0" text="File.up" textFill="WHITE">
                             <graphic>

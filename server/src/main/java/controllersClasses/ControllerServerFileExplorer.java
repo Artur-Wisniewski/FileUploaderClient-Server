@@ -49,7 +49,8 @@ public class ControllerServerFileExplorer implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        fileExplorer = new FileExplorerTableView(tableViewMain,columnIcon,columnDateModified,columnName,columnSize,"C:\\Users\\Artur\\Downloads\\MN - gral\\Wejsciówka 3\\Koło");
+        fileExplorer = new FileExplorerTableView(tableViewMain,columnIcon,columnDateModified,columnName,columnSize,
+                "C:\\SERVER");
         currentDirectory.setText("Current Directory: " + fileExplorer.getPath());
     }
     @FXML
@@ -69,7 +70,11 @@ public class ControllerServerFileExplorer implements Initializable {
     }
     @FXML
     void goUpOnAction(ActionEvent event) {
+
+        if(!fileExplorer.getDirectoryFile().getName().equals("SERVER"))
         changeDirectory(fileExplorer.getDirectoryFile().getParentFile());
+        else
+            System.out.println("It's your mother directory !!!");
     }
     @FXML
     void dropRightClickMenu(ContextMenuEvent event) {}
