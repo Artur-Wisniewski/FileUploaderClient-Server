@@ -1,5 +1,7 @@
 # FileUploaderClient-Server
 
-![MENU](https://github.com/GoldenGytly777/FileUploaderClient-Server/tree/master/image/menu.PNG)
+Gui
 
-![Logs](https://github.com/GoldenGytly777/FileUploaderClient-Server/tree/master/image/users.PNG)
+![alt text](https://github.com/GoldenGytly777/FileUploaderClient-Server/tree/master/image/menu.PNG)
+
+![alt text](https://github.com/GoldenGytly777/FileUploaderClient-Server/tree/master/image/users.PNG)
